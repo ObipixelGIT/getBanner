@@ -2,7 +2,24 @@
 Performs a banner grab for a given website.
 
 ## How this script works?
+
 A banner grab is a technique used to gather information about a website's operating system, web server, and other details by inspecting the HTTP headers returned in response to a request. This is a Python 3 script that performs a banner grab for a given website.
+
+## Here is a breakdown of what the code does:
+
+- The script imports the subprocess module to execute system commands and the PrettyTable module to create a table to display the banner information.
+- The script asks the user to enter the URL of the website they want to scan.
+- The subprocess.check_output function is used to execute the curl command and perform a banner grab of the specified URL.
+- The -I flag is used to retrieve only the HTTP headers of the response.
+- The output of the command is then decoded from bytes to a string using the decode() method.
+- The output string is split into lines using the split() method and stored in a list called lines.
+- A PrettyTable object is created with two columns, 'Header' and 'Value', to display the banner information.
+- A loop is used to iterate over each line in the lines list.
+- If the line starts with 'HTTP/', the HTTP status code and message are extracted from the line and added to the table.
+- If the line contains a colon (indicating a header), the header and its value are extracted and added to the table.
+- The table object is printed using the print() function.
+- If an error occurs during the execution of the script, such as an invalid URL or an exception being raised, an appropriate error message is printed to the console.
+
 
 ## Requirements
 

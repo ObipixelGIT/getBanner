@@ -3,7 +3,7 @@ Performs a banner grab for a given website.
 
 ## How this script works?
 
-A banner grab is a technique used to gather information about a website's operating system, web server, and other details by inspecting the HTTP headers returned in response to a request. This is a Python 3 script that performs a banner grab for a given website.
+A banner grab is a technique used to gather information about a website's operating system, web server, and other details by inspecting the HTTP headers returned in response to a request. This is a Python 3 script that performs a banner grab for a given website and is classified as an OSINT tool.
 
 ## Here is a breakdown of what the code does:
 
